@@ -145,12 +145,12 @@ if __name__ == "__main__":
     if '0x' in x:
         d = hex_to_dec(x)
         b = hex_to_bin(x)
-        print(f"\nDecimal = {d}, Binary = {b}\n")
+        print(f"\nDecimal = {d}, Binary = 0b{b}\n")
     elif '0b' in x:
         d = bin_to_dec(x)
         h = bin_to_hex(x)
-        print(f"\nDecimal = {d}, Hexadecimal = {h}\n")
+        print(f"\nDecimal = {d}, Hexadecimal = 0x{h}\n")
     else:
         b = dec_to_bin(x)
         h = dec_to_hex(x)
-        print(f"\nBinary = {b}, Hexadecimal = {h}\n")
+        print(f"\nBinary = 0b{b}, Hexadecimal = 0x{h}\n")
